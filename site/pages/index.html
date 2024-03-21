@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>Hello, {{un}}</h1>
+    <h2>Active Populations</h2>
+    <div>
+        <table id = "Login">
+            {% for item in arr %}
+                <tr>
+                    <td> <a href="populations/{{item[0]}}/{{item[1]}}/{{item[2]}}">{{item[0]}} - {{item[1]}} {{item[2]}} ({{item[3]}})</a></td>
+                </tr>
+            {% endfor %}
+        </table>
+        <img src="static/first.png" alt="first_chart" />
+    </div>
+    <div>
+        <h2>Overall Attendance</h2>
+        <table id = "Login">
+            {% for item in arr2 %}
+            <tr>
+                <td>{{item[0]}} - {{item[1]}} {{item[2]}} ({{item[3]}}%)</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <img src="static/second.png" width="900" height="900" alt="second_chart" />
+
+    </div>
+    <p>Last time generated {{time}}</p>
+</body>
+<script src="static/main.js"></script>
+</html>

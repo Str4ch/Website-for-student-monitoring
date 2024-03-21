@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<body>
+    <div>
+        <h1> Students </h1>
+        <table>
+            <th>email</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>passed</th>
+
+            {% for item in arr1 %}
+            <tr>
+
+                <td><a href="/student/{{item[0]}}">{{item[0]}}</a></td>
+                <td><a href="/student/{{item[0]}}">{{item[1]}}</a></td>
+                <td><a href="/student/{{item[0]}}">{{item[2]}}</a></td>
+                <td>{{item[3]}} / {{item[4]}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div>
+        <h1> Courses </h1>
+        <table>
+            <th>Name</th>
+            <th>Sessions count</th>
+
+            {% for item in arr2 %}
+            <tr>
+                <td><a href="/students/{{course}}/{{year}}/{{period}}">{{item[0]}}</a></td>
+                <td>{{item[1]}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

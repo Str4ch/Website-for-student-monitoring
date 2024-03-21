@@ -1,0 +1,15 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #19191a;
+}
+#Login {
+    height: 200px;
+    width: 350px;
+    background-color: #76787a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-color: #ffffff;
+}

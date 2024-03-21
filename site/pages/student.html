@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div>
+        <h1>
+            Grades
+        </h1>
+        <table>
+            <th>email</th>
+            <th>first name</th>
+            <th>last name</th>
+            <th>course name</th>
+            <th>Grade</th>
+
+            {% for item in arr1 %}
+            <tr>
+
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
